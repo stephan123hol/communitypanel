@@ -1,0 +1,61 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^(.*)/$ /$1 [L]
+RewriteRule ^registreren$ index.php?p=registreren
+RewriteRule ^secret$ index.php?p=secret
+RewriteRule ^tos$ index.php?p=tos
+RewriteRule ^banned$ banned.php
+RewriteRule ^awards$ index.php?p=awards
+RewriteRule ^start$ index.php?p=start
+RewriteRule ^adblock$ index.php?p=adblock
+RewriteRule ^uitloggen$ index.php?p=uitloggen
+RewriteRule ^wachtwoord_veranderen$ index.php?p=wachtwoord_veranderen
+RewriteRule ^wachtwoord_vergeten$ index.php?p=wachtwoord_vergeten
+RewriteRule ^beheer/paneel_leden$ index.php?p=paneel_leden
+RewriteRule ^beheer/paneel_lid_toevoegen$ index.php?p=paneel_lid_toevoegen
+RewriteRule ^beheer/home$ index.php?p=beheer_home
+RewriteRule ^beheer/logs$ index.php?p=beheer_logs
+RewriteRule ^beheer/wis_paneellid/(.*)$ index.php?p=paneel_leden&del=1&habbonaam=$1
+RewriteRule ^beheer/edit_paneellid/(.*)$ index.php?p=paneel_leden&edit=1&habbonaam=$1
+RewriteRule ^afwezigen$ index.php?p=afwezigen
+RewriteRule ^afmelding_toevoegen$ index.php?p=afmelding_toevoegen
+RewriteRule ^afmelding/wis/(.*)$ index.php?p=afwezigen&actie=del&id=$1
+RewriteRule ^trainingen$ index.php?p=trainingen
+RewriteRule ^training_toevoegen$ index.php?p=training_toevoegen
+RewriteRule ^training/wis/(.*)$ index.php?p=trainingen&actie=del&id=$1
+RewriteRule ^medewerkers$ index.php?p=medewerkers
+RewriteRule ^promoveren$ index.php?p=promoveren
+RewriteRule ^promoveren/(.*)$ index.php?p=promoveren&user=$1
+RewriteRule ^degraderen$ index.php?p=degraderen
+RewriteRule ^degraderen/(.*)$ index.php?p=degraderen&user=$1
+RewriteRule ^ontslaan$ index.php?p=ontslaan
+RewriteRule ^waarschuwingen$ index.php?p=waarschuwingen
+RewriteRule ^waarschuwing_toevoegen$ index.php?p=waarschuwing_toevoegen
+RewriteRule ^waarschuwing/wis/(.*)$ index.php?p=waarschuwingen&actie=del&id=$1
+RewriteRule ^beheer/rangniveau_toevoegen$ index.php?p=rangniveau_toevoegen
+RewriteRule ^beheer/rangniveaus$ index.php?p=rangniveaus
+RewriteRule ^beheer/rangniveau/wis/(.*)$ index.php?p=rangniveaus&del=1&id=$1
+RewriteRule ^beheer/rangniveau/edit/(.*)$ index.php?p=rangniveaus&edit=1&id=$1
+RewriteRule ^beheer/promotags$ index.php?p=promotags
+RewriteRule ^beheer/promotag_toevoegen$ index.php?p=promotag_toevoegen
+RewriteRule ^beheer/promotag/wis/(.*)$ index.php?p=promotags&actie=del&id=$1
+RewriteRule ^dossier/(.*)$ index.php?p=dossier&naam=$1
+RewriteRule ^conversaties$ index.php?p=conversaties
+RewriteRule ^conversaties/bekijk/(.*)$ index.php?p=conversaties&actie=bekijk&convo_id=$1
+RewriteRule ^conversaties/nieuw$ index.php?p=conversaties&actie=nieuw
+RewriteRule ^forum/(.*)/(.*)/(.*)/(.*)$ /index.php?p=forum&departement=$1&categorie=$2&topic=$3&page=$4 [L,NE] #forum rewrite url test
+RewriteRule ^forum/(.*)/(.*)/(.*)$ /index.php?p=forum&departement=$1&categorie=$2&topic=$3 [L,NE] #forum rewrite url test
+RewriteRule ^forum/(.*)/(.*)$ /index.php?p=forum&departement=$1&categorie=$2 [L,NE] #forum rewrite url test
+RewriteRule ^forum/(.*)$ /index.php?p=forum&departement=$1 [L,NE] #forum rewrite url test
+RewriteRule ^forum$ /index.php?p=forum [L,NE] #forum rewrite url test
+
+RewriteRule ^livesupport$ index.php?p=livesupport
+RewriteRule ^admin$ index.php?p=admin
+RewriteRule ^admin/(.*)$ index.php?p=admin&action=$1
+RewriteRule ^stats$ index.php?p=stats
+RewriteRule ^stats/(.*)$ index.php?p=stats&action=$1
+RewriteCond %{THE_REQUEST} /(profiel)/(\S+)\s [NC]
+RewriteRule ^profiel index.php?p=%1&user=%2 [L,NC]
+RewriteRule ^profiel/?$ index.php?p=profiel [L,QSA]
+RewriteRule ^notifyrechtenhouders$ index.php?p=notifyrechtenhouders

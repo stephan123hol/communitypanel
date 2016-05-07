@@ -1,0 +1,520 @@
+/* Base elements */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #4E5E6A;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F1F4F9;
+}
+
+.header {
+	height: 70px;
+	background: #ffffff;
+	margin-left: 150px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+	color: #777;
+}
+
+.content-left {
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    background: #34425A;
+	z-index: 100;
+}
+
+.wrapper {
+	margin-left: 200px;
+	padding-top: 30px;
+	margin-right: 50px;
+}
+
+.ads-box-728 {
+	-webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	border-radius: 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	width: 728px !important;
+	margin: 0 auto;
+}
+
+.panel-box {
+	-webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	border-radius: 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.panel-box > .panel-box-body {
+	position: relative;
+	padding: 20px;
+}
+
+.page-title {
+	font-size: 24px;
+	font-weight: 300;
+	color: #74767d;
+	margin: -10px 0px 20px 10px;
+	display: inline-block;
+	float: left;
+}
+
+/* Header inner */
+.header-right {
+	padding-top: 12px;
+	position: absolute;
+	right: 60px;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+
+.header-left {
+	padding-top: 27px;
+	position: absolute;
+	left: 190px;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+
+.header-button {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: -14px;
+}
+
+.header-alert {
+	background: #009688;
+	color: #fff;
+	font-weight: bold;
+	font-size: 10px;
+	display: block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin-left: 25px;
+	top: -7px;
+}
+
+.header-user {
+	display: inline-block;
+	padding-top: 14px;
+	margin-left: 20px;
+}
+
+/* Menu */
+.menu-header {
+	width: 150px;
+	height: 100px;
+	font-size: 18px;
+	position: relative;
+	display: block;
+	background: #34425A;
+}
+
+.menu-item {
+	width: 150px;
+	height: 70px;
+	color: #899dc1;
+	font-size: 22px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+.menu-item:hover, .menu-active {
+	background: rgba(0,0,0,.1);
+	color: #ffffff;
+	border-left: 3px solid #009688;
+	width: 147px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.menu-item > .content, .menu-header > .content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	text-align: center;
+}
+
+.menu-item > .content > span {
+	font-size: 13px;
+}
+
+.menu-advanced {
+	display: none;
+	font-size: 11px;
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff !important;
+	background: rgba(0,0,0,.1);
+	border-left: 3px solid #009688;
+}
+
+.menu-advanced a {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+.menu-advanced > .item {
+	padding: 8px 8px;
+}
+
+/* Elements */
+.element {
+	margin: 10px;
+}
+
+.avatar-box {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	background: url(http://habbofanclub.nl/_paneel/assets/afbeelding/avatar-bg.png);
+	webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+	-ms-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+	-o-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+}
+
+.avatar-user {
+	margin-top: -10px;
+}
+
+.link-button {
+	cursor: pointer;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.w-20 {
+	width: 20%;
+	min-width: 200px;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+.m-w-358px {
+	min-width: 358px;
+}
+
+.element-head {
+	height: 50px;
+	background: #2E3641;
+	font-family: "Montserrat";
+	color: #e9f0f4;
+	padding-left: 20px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.element-body {
+	background: #fff;
+	font-size: 12px;
+	padding: 10px;
+}
+
+.stat-first {
+	height: 80px;
+	background: #CC324B;
+}
+
+.stat-other {
+	height: 65px;
+	background: #E64C65;
+}
+
+.stat-item-left {
+	position: absolute;
+	margin-top: 0px;
+}
+
+.stat-first  > .stat-item-left {
+	margin-top: 7px !important;
+}
+
+.stat-item-right {
+	margin-left: 37px;
+	min-height: 10px;
+	color: #fff;
+}
+
+.stat-item-right > h1 {
+	font-family: "Montserrat";
+	margin: 0;
+}
+
+.stat-item-right > h2 {
+	font-family: "Montserrat";
+	margin: 0;
+	font-size: 18px;
+}
+
+.stat-item-right > p {
+	margin: 0;
+}
+
+/* Other */
+.server-info-body {
+	padding: 0 !important;
+	font-size: 0;
+}
+
+.stat-1, .stat-2 {
+	float: left;
+	height: 60px;
+	max-height: 60px;
+	width: 50%;
+	margin-right: 0px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	font-family: "Open Sans";
+}
+
+.stat-1 {
+	background: #31AB7E;
+}
+
+.stat-2 {
+	background: #5394C9;
+}
+
+.stat-inner {
+	margin-top: 12px;
+}
+
+.v-center {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.t-a-center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+article.news-list {
+	margin-bottom: 15px;
+}
+
+article.news-list > h4 {
+	font-family: "Asap", sans-serif;
+	color: #f97e76;
+	font-size: 16px;
+	margin: 0;
+}
+
+article.news-list > p {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #9EB2C0;
+}
+
+/* Conversations list */
+.conversations {
+	width: 100%;
+	max-width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.conversations tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.conversations > tbody > tr:hover {
+	background-color: #FAFAFA;
+	cursor: pointer;
+}
+
+.conversations > tbody > tr > td.table-info {
+	font-size: 15px;
+}
+
+.conversations > tbody > tr > td.table-info, .conversations > thead > tr > th.table-info {
+	width: 50px;
+	text-align: center;
+}
+
+.conversations > tbody > tr > td.table-starter {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.conversations > tbody > tr > td.table-title, .conversations > thead > tr > th.table-title {
+	padding-left: 10px;
+}
+
+.conversations > tbody > tr > td.table-status {
+	width: 1%;
+	white-space: nowrap;
+	padding-right: 40px;
+}
+
+.conversations > tbody > tr > td.table-date {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.conversations > thead > tr > th {
+	vertical-align: bottom;
+	padding: 15px 15px 15px 0px;
+	line-height: 1.42857143;
+	text-align: left;
+}
+
+.conversations > tbody > tr > td {
+	padding: 15px 15px 15px 0px;
+	line-height: 1.42857143;
+	vertical-align: top;
+}
+
+.conversations-search {
+	float: right;
+}
+
+/* Conversation */
+.conversation-container {
+	width: 650px;
+	display: inline-block;
+}
+
+.message-container {
+	min-height: 150px;
+	max-height: 100%;
+	width: 100%;
+	margin-right: 26px;
+	margin-bottom: 15px;
+	border: 1px solid #D6D6D6;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	background: #FFFFFF;
+}
+
+.message-form {
+	height: 200px;
+	width: 100%;
+}
+
+.message-textarea {
+	width: 100%;
+	height: 160px;
+}
+
+.message-title {
+	width: 639px;
+	height: 20px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.message-left {
+	text-align: center;
+	display: inline-block;
+	width: 190px;
+	vertical-align: top;
+}
+
+.message-right {
+	min-height: 150px;
+	max-height: 100%;
+	display: inline-block;
+	width: 430px;
+	vertical-align: top;
+	padding: 0px 10px 10px 10px;
+	border-left: 1px solid #D6D6D6;
+}
+
+.message-rank {
+	color: rgb(150,150,150);
+	font-style: italic;
+}
+
+.message-lower-info {
+	position: absolute;
+	bottom: 8px;
+	color: rgb(150,150,150);
+	font-size: 9px;
+	font-style: italic;
+}
+
+.message-infobox {
+	float: right;
+	width: 280px;
+}
+
+.message-closed {
+	font-style: italic;
+}

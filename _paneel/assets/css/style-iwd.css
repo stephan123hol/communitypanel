@@ -1,0 +1,33 @@
+body, html {
+	background-color: #F1A9A0;
+}
+
+.content-left {
+	background-color: #DB0A5B;
+}
+
+.menu-header {
+	background-color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.menu-item {
+	color: #ffffff;
+}
+
+.menu-advanced {
+	background-color: #DB0A5B;
+}
+
+.forum-topbar {
+	background-color: #DB0A5B;
+}
+
+a {
+	color: #F62459;
+}
+
+.submit {
+	background-color: #F62459;
+	border: 2px solid #F62459;
+}
